@@ -75,8 +75,6 @@ class WatchLater(models.Model):
     class Meta:      
         unique_together = ("Show_id", "User_id")
 
-
-
 class Subscribe(models.Model):
     membership = models.ForeignKey(Membership,on_delete=models.CASCADE)
     user = models.ForeignKey(Profile,on_delete=models.CASCADE)
